@@ -34,7 +34,7 @@ public class ContactControllerTest {
 		when(impl.saveContactDetails(Mockito.any())).thenReturn(true);
 		
 		
-		ContactDetails contactdetails = new ContactDetails(101, "name", "email", 9010307);
+		ContactDetails contactdetails = new ContactDetails();
 		
 		ObjectMapper obj = new ObjectMapper();
 		String json = null;
